@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Image Properties</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* GENERAL PAGE STYLE */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Main container */
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: white;
+    }
+
+    /* Main heading */
+
+    h1 {
+      text-align: center;
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+
+    /* Introduction */
+
+    .intro {
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    /* IMAGE SECTIONS */
+
+    .image-section,
+    .comparison,
+    .position-section,
+    .opacity-section,
+    .size-section {
+      margin-bottom: 40px;
+      padding: 25px;
+      background-color: #f8fafc;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #1e3a8a;
+    }
+
+    /* IMAGE 1
+   NORMAL RECTANGULAR IMAGE */
+
+    .image-one {
+      /* width */
+      width: 500px;
+
+      /* height */
+      height: 300px;
+
+      /* border */
+      border: 4px solid #2563eb;
+
+      /* rounded corners */
+      border-radius: 10px;
+
+      /* shadow */
+      box-shadow: 5px 5px 15px gray;
+
+      /* Controls how image fits */
+      object-fit: cover;
+    }
+
+    /* IMAGE 2
+   CIRCULAR PROFILE IMAGE */
+
+    .image-two {
+      width: 250px;
+      height: 250px;
+      /* Makes the image circular */
+      border-radius: 50%;
+      border: 5px solid #2563eb;
+      box-shadow: 0 5px 15px gray;
+      /* Keeps the image nicely cropped */
+      object-fit: cover;
+    }
+
+    /*IMAGE 3
+   FIXED SIZE IMAGE */
+
+    .image-three {
+      width: 400px;
+      height: 250px;
+      border: 4px solid #333;
+      border-radius: 8px;
+
+      /*
+       cover fills the entire box.
+       Some parts of the image may be cropped.
+    */
+      object-fit: cover;
+
+      /*
+       Controls which part of the image
+       stays visible when cropped.
+    */
+      object-position: center;
+      box-shadow: 5px 5px 12px gray;
+    }
+
+    /*OBJECT-FIT COMPARISON */
+
+    .comparison-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .fit-box {
+      flex: 1;
+      min-width: 250px;
+      padding: 15px;
+      background-color: white;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .fit-box img {
+      width: 200px;
+      height: 150px;
+      border: 2px solid #333;
+    }
+
+    /* object-fit: contain */
+
+    .contain-image {
+      object-fit: contain;
+    }
+
+    /* object-fit: cover */
+
+    .cover-image {
+      object-fit: cover;
+    }
+
+    /* object-fit: fill */
+
+    .fill-image {
+      object-fit: fill;
+    }
+
+    /* OBJECT POSITION */
+
+    .position-image {
+      width: 400px;
+
+      height: 250px;
+
+      object-fit: cover;
+
+      /*
+       Shows the center of the image.
+    */
+      object-position: center;
+
+      border: 3px solid #2563eb;
+
+      border-radius: 10px;
+    }
+
+    /* OPACITY */
+
+    .opacity-image {
+      width: 400px;
+
+      height: 250px;
+
+      object-fit: cover;
+
+      /*
+       0 = completely transparent
+       1 = completely visible
+    */
+      opacity: 0.6;
+
+      border-radius: 10px;
+
+      box-shadow: 5px 5px 15px gray;
+    }
+
+    /* MIN-WIDTH / MAX-WIDTH / MAX-HEIGHT*/
+
+    .size-image {
+      /*
+       Minimum width of the image
+    */
+      min-width: 200px;
+
+      /*
+       Maximum width of the image
+    */
+      max-width: 600px;
+
+      /*
+       Maximum height of the image
+    */
+      max-height: 300px;
+
+      width: 100%;
+
+      height: auto;
+
+      border: 3px solid #16a34a;
+
+      border-radius: 10px;
+    }
+
+    /* RESPONSIVE DESIGN */
+
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+
+        padding: 15px;
+      }
+
+      .image-one,
+      .image-three,
+      .position-image,
+      .opacity-image {
+        width: 100%;
+
+        height: auto;
+      }
+
+      .image-two {
+        width: 200px;
+
+        height: 200px;
+      }
+    }
+  </style>
+  <body>
+    <main class="container">
+      <h1>CSS Image Properties</h1>
+
+      <p class="intro">
+        This webpage demonstrates different CSS properties used to control
+        images, including size, shape, position, opacity, borders and shadows.
+      </p>
+
+      <!--  IMAGE 1-->
+
+      <section class="image-section">
+        <h2>Image 1 — Normal Rectangular Image</h2>
+
+        <img
+          src="images/image1.jpg"
+          alt="Normal rectangular image"
+          class="image-one"
+        />
+
+        <p>
+          This is a normal rectangular image. It demonstrates width, height,
+          border, border-radius and box-shadow.
+        </p>
+      </section>
+
+      <!--  IMAGE 2-->
+
+      <section class="image-section">
+        <h2>Image 2 — Circular Profile Image</h2>
+
+        <img
+          src="images/image2.jpg"
+          alt="Circular profile image"
+          class="image-two"
+        />
+
+        <p>
+          This image is made circular using border-radius: 50%. It can be used
+          as a profile picture.
+        </p>
+      </section>
+
+      <!-- IMAGE 3-->
+
+      <section class="image-section">
+        <h2>Image 3 — Fixed Size with Object-Fit</h2>
+
+        <img
+          src="images/image3.jpg"
+          alt="Fixed size image"
+          class="image-three"
+        />
+
+        <p>
+          This image has a fixed width and height. The object-fit property
+          controls how the image fits inside the fixed-size box.
+        </p>
+      </section>
+
+      
+    </main>
+  </body>
+</html>

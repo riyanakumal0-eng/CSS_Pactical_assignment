@@ -1,0 +1,1271 @@
+/* Universal selector  select all HTML elements on the page. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* element selector (selects all <h1> elements) */
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+/* class selector (selects all elements with class="intro") */
+.intro {
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Another class selector */
+.highlight {
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+
+/* ID selector (selects the element with id ="about") */
+
+#about {
+    background-color: white;
+    border-left: 5px solid blue;
+}
+
+
+/* Grouping selector  (selects h2, h3 and p at the same time */
+
+h2, h3, p {
+    margin-bottom: 15px;
+}
+
+
+/* Descendant selector (selects <p> elements that are inside an element with class="about-box" */
+
+.about-box p {
+    color: green;
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+/* Child selector (selects only <li> elements that are direct children */
+
+.skills ul > li {
+    color: purple;
+    margin-bottom: 8px;
+}
+
+
+/*  ADJACENT SIBLING SELECTOR +
+   Selects the <p> that comes IMMEDIATELY AFTER
+   .first-text.*/
+
+.first-text + p {
+    color: red;
+    font-weight: bold;
+}
+
+
+/*  GENERAL SIBLING SELECTOR ~
+   Selects ALL <p> elements that come AFTER
+   first-text and have the same parent. */
+
+.first-text ~ p {
+    background-color: #fff3cd;
+    padding: 8px;
+}
+
+
+/*  ATTRIBUTE SELECTOR
+   Selects all <input> elements whose type is "email".*/
+
+input[type="email"] {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+
+/* GENERAL PAGE STYLING */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: #4a6fa5;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* Sections */
+section {
+    background-color: white;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* Buttons */
+button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/* Lists */
+ul {
+    margin-left: 25px;
+}
+
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* Images */
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+/* task2 */
+
+
+/* REM UNIT
+   Font size is 2.5rem.
+   1rem normally represents the root font size.
+*/
+h1 {
+    font-size: 2.5rem;
+}
+
+
+/* VW UNIT
+   The heading size changes according
+   to the width of the browser window.
+*/
+h2 {
+    font-size: 3vw;
+}
+
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* MAIN CONTAINER
+   Width uses percentage (%).
+   Border uses pixels (px).
+   Height uses viewport height (vh).
+*/
+.main-container {
+    width: 90%;
+    min-height: 100vh;
+    border: 3px solid #333;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+
+/* INTRODUCTION */
+.intro {
+    font-size: 1rem;
+}
+
+
+/* CARDS CONTAINER */
+.cards {
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+/* CARD
+   Padding uses em.
+   Border uses px.
+*/
+.card {
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 2em;
+
+    margin: 1em;
+
+    border: 2px solid #4a6fa5;
+
+    background-color: #eef5ff;
+}
+
+
+/* CARD PARAGRAPH */
+.card p {
+    font-size: 1rem;
+}
+
+
+/* BUTTON */
+button {
+    padding: 0.8em 1.5em;
+
+    border: 2px solid #333;
+
+    background-color: #4a6fa5;
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+
+/* Button hover */
+button:hover {
+    background-color: #333;
+}
+
+
+
+/* task3 */
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    /*  HEADER
+   HEX COLOR */
+
+    header {
+      background-color: #2563eb;
+      color: white;
+      padding: 40px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    /* COMMON CARD*/
+
+    .card {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* 1. COLOR NAME */
+
+    /* Text uses a color name */
+    .color-name {
+      background-color: lightblue;
+      color: darkblue;
+
+      /* Border also uses a color name */
+      border: 3px solid blue;
+    }
+
+    /* 2. HEX */
+
+    /* Background uses HEX */
+    .hex {
+      background-color: #ffe4e1;
+
+      /* Text uses HEX */
+      color: #8b0000;
+
+      border: 3px solid #dc143c;
+    }
+
+    /* 3. RGB */
+
+    /* Background uses RGB */
+    .rgb {
+      background-color: rgb(220, 252, 231);
+
+      /* Text uses RGB */
+      color: rgb(22, 101, 52);
+
+      /* Border uses RGB */
+      border: 3px solid rgb(34, 197, 94);
+    }
+
+    /* 4. RGBA */
+
+    /* RGBA includes transparency.
+   The last value 0.5 means 50% opacity.
+*/
+    .rgba {
+      background-color: rgba(59, 130, 246, 0.3);
+
+      color: rgba(30, 64, 175, 1);
+
+      border: 3px solid rgba(37, 99, 235, 0.7);
+    }
+
+    /* 5. HSL */
+
+    /* HSL means:
+   Hue, Saturation, Lightness
+*/
+    .hsl {
+      background-color: hsl(45, 100%, 90%);
+
+      color: hsl(25, 90%, 30%);
+
+      border: 3px solid hsl(35, 90%, 50%);
+    }
+
+    /* 6. HSLA*/
+
+    /* HSLA includes transparency.
+   0.5 means 50% opacity.
+*/
+    .hsla {
+      background-color: hsla(280, 70%, 60%, 0.4);
+
+      color: hsl(280, 70%, 30%);
+
+      border: 3px solid hsla(280, 70%, 40%, 0.8);
+    }
+
+    /*  BUTTONS*/
+
+    button {
+      margin-top: 20px;
+
+      padding: 12px 25px;
+
+      border: none;
+      border-radius: 5px;
+
+      color: white;
+
+      cursor: pointer;
+    }
+
+    /* Different button colors */
+
+    .color-name button {
+      background-color: blue;
+    }
+
+    .hex button {
+      background-color: #dc143c;
+    }
+
+    .rgb button {
+      background-color: rgb(34, 197, 94);
+    }
+
+    .rgba button {
+      background-color: rgba(37, 99, 235, 0.8);
+    }
+
+    .hsl button {
+      background-color: hsl(35, 90%, 50%);
+    }
+
+    .hsla button {
+      background-color: hsla(280, 70%, 40%, 0.8);
+    }
+
+    /* FOOTER*/
+
+    footer {
+      background-color: #333;
+      color: white;
+
+      padding: 20px;
+
+      margin-top: 30px;
+    }
+
+
+
+
+/* task4 */
+ /* font-family
+   Changes the type of font used on the page.
+*/
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Main article */
+    .article {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+    }
+
+    /* font-family + font-size + font-weight
+   Different style for the main heading.
+*/
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: #1f3c88;
+      text-align: center;
+    }
+
+    /* Subheading */
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Normal paragraph */
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    /* font-style
+   Makes the introduction italic.
+*/
+    .intro {
+      font-style: italic;
+    }
+
+    /* Quote */
+    blockquote {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+
+      margin: 25px 0;
+      padding: 20px;
+
+      background-color: #eef3ff;
+      border-left: 5px solid #1f3c88;
+    }
+
+    /* Heading for list */
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    /* List */
+    li {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* font-variant
+   small-caps changes lowercase letters
+   into smaller capital letters.
+*/
+    .conclusion {
+      font-variant: small-caps;
+    }
+
+    /* font-stretch
+   Makes the text wider or narrower when
+   the selected font supports this property.
+*/
+    h2 {
+      font-stretch: expanded;
+    }
+
+    /* Challenge:
+   Heading looks different from paragraphs
+   while keeping a professional design.
+*/
+
+    h1,
+    h3 {
+      letter-spacing: 1px;
+    }
+
+
+
+/* task5 */
+ /*GENERAL PAGE STYLE */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+
+      font-family: Arial, sans-serif;
+
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Main container */
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+
+      margin: 30px auto;
+      padding: 30px;
+
+      background-color: white;
+    }
+
+    /*  MAIN TITLE */
+
+    .title {
+      text-align: center;
+
+      color: #1d4ed8;
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
+
+      text-shadow: 2px 2px 4px gray;
+    }
+
+    /* Introduction */
+
+    .intro {
+      text-align: center;
+
+      line-height: 1.7;
+
+      color: #555;
+    }
+
+    /*EXAMPLE BOX */
+
+    .example {
+      margin: 25px 0;
+      padding: 20px;
+
+      border: 1px solid #ddd;
+      border-radius: 8px;
+
+      background-color: #fafafa;
+    }
+
+    .example h2 {
+      color: #222;
+    }
+
+    /* 1. COLOR */
+
+    /* color changes the color of text */
+
+    .color-example {
+      color: #2563eb;
+    }
+
+    /*  2. TEXT-ALIGN*/
+
+    /* text-align controls horizontal alignment */
+
+    .align-example {
+      text-align: center;
+    }
+
+    /* 3. TEXT-ALIGN-LAST */
+
+    /* text-align-last controls the alignment
+   of the last line */
+
+    .align-last-example {
+      text-align: justify;
+      text-align-last: right;
+    }
+
+    /* 4. TEXT-DECORATION */
+
+    /* text-decoration is a shorthand property */
+
+    .decoration-example {
+      text-decoration: underline wavy red 2px;
+    }
+
+    /*  5. TEXT-DECORATION-LINE */
+
+    /* Controls the type of decoration line */
+
+    .decoration-line-example {
+      text-decoration-line: underline;
+    }
+
+    /* 6. TEXT-DECORATION-STYLE*/
+
+    /* Controls the style of decoration */
+
+    .decoration-style-example {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+    }
+
+    /* 7. TEXT-DECORATION-COLOR */
+
+    /* Changes the color of decoration */
+
+    .decoration-color-example {
+      text-decoration-line: underline;
+      text-decoration-color: red;
+    }
+
+    /*  8. TEXT-DECORATION-THICKNESS */
+
+    /* Controls the thickness of decoration */
+
+    .decoration-thickness-example {
+      text-decoration-line: underline;
+      text-decoration-thickness: 4px;
+    }
+
+    /*  9. TEXT-TRANSFORM */
+
+    /* Changes the capitalization of text */
+
+    .transform-example {
+      text-transform: uppercase;
+    }
+
+    /* 10. TEXT-INDENT */
+
+    /* Adds space before the first line */
+
+    .indent-example {
+      text-indent: 50px;
+    }
+
+    /*  11. LETTER-SPACING */
+
+    /* Controls space between individual letters */
+
+    .letter-example {
+      letter-spacing: 8px;
+    }
+
+    /* 12. WORD-SPACING */
+
+    /* Controls space between words */
+
+    .word-example {
+      word-spacing: 20px;
+    }
+
+    /* 13. LINE-HEIGHT */
+
+    /* Controls vertical space between lines */
+
+    .line-example {
+      line-height: 2;
+    }
+
+    /* 14. TEXT-SHADOW
+    /* Adds a shadow behind the text */
+
+    .shadow-example {
+      font-size: 30px;
+
+      font-weight: bold;
+
+      text-shadow: 3px 3px 5px gray;
+    }
+
+    /* 15. WHITE-SPACE */
+
+    /* Controls how spaces and line breaks
+   are handled */
+
+    .whitespace-example {
+      white-space: nowrap;
+
+      overflow: auto;
+    }
+
+    /* 16. WORD-BREAK */
+
+    /* Allows long words to break */
+
+    .break-example {
+      word-break: break-all;
+
+      max-width: 300px;
+
+      border: 1px solid #999;
+
+      padding: 10px;
+    }
+
+    /*  17. OVERFLOW-WRAP */
+
+    /* Prevents long words from overflowing */
+
+    .wrap-example {
+      overflow-wrap: break-word;
+
+      max-width: 300px;
+
+      border: 1px solid #999;
+
+      padding: 10px;
+    }
+
+    /*  FINAL CSS TEXT SHOWCASE */
+
+    .showcase {
+      margin-top: 40px;
+
+      padding: 30px;
+
+      text-align: center;
+
+      background-color: #eef4ff;
+
+      border-left: 5px solid #2563eb;
+    }
+
+    /* Challenge heading */
+
+    .showcase-title {
+      color: #1d4ed8;
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
+
+      text-shadow: 2px 2px 4px gray;
+    }
+
+    /* Challenge paragraph */
+
+    .showcase-text {
+      color: #444;
+
+      font-size: 17px;
+
+      line-height: 1.8;
+
+      word-spacing: 5px;
+
+      text-align: justify;
+    }
+
+
+
+
+
+/* task7 */
+/* =====================================
+   UNIVERSAL SELECTOR
+   Selector 1
+   ===================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================
+   BODY
+   Element Selector
+   Selector 2
+   ===================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Color format 1: HEX */
+    background-color: #e8eef7;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   MAIN PAGE
+   ===================================== */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    /* Unit: vh */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 5vh 5%;
+
+}
+
+
+/* =====================================
+   PROFILE CARD
+   Class Selector
+   Selector 3
+   ===================================== */
+
+.profile-card {
+
+    width: 90%;
+
+    /* Unit: % */
+
+    max-width: 450px;
+
+    padding: 2rem;
+
+    /* Unit: rem */
+
+    background-color: white;
+
+    border: 2px solid #d1d5db;
+
+    border-radius: 20px;
+
+    /*
+       Image-related style / box styling
+       creates a professional card.
+    */
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+/* =====================================
+   PROFILE IMAGE
+   Class Selector
+   Selector 4
+   ===================================== */
+
+.profile-image {
+
+    width: 180px;
+
+    height: 180px;
+
+    /*
+       Image property:
+       Makes image circular.
+    */
+    border-radius: 50%;
+
+    /*
+       Image property:
+       Controls how image fits.
+    */
+    object-fit: cover;
+
+    /*
+       Image property:
+       Controls position of image.
+    */
+    object-position: center;
+
+    /*
+       Image property:
+       Adds border.
+    */
+    border: 5px solid #2563eb;
+
+    /*
+       Image property:
+       Adds shadow.
+    */
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.35);
+
+    /*
+       Image property:
+       Controls transparency.
+    */
+    opacity: 0.95;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =====================================
+   NAME
+   ID Selector
+   Selector 5
+   ===================================== */
+
+.name {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    /* Typography */
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    /* Text properties */
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    /* Color format 2: RGB */
+    color: rgb(30, 64, 175);
+
+    /* Text shadow */
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+
+/* =====================================
+   PROFESSION
+   Element Selector
+   ===================================== */
+
+.profession {
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    font-style: italic;
+
+    /* Color format 3: HSL */
+    color: hsl(220, 70%, 45%);
+
+    margin-top: 0.5rem;
+
+    /*
+       Text decoration
+    */
+    text-decoration-line: underline;
+
+    text-decoration-style: solid;
+
+    text-decoration-color: #93c5fd;
+
+    text-decoration-thickness: 2px;
+}
+
+
+/* =====================================
+   DESCRIPTION
+   Class Selector
+   ===================================== */
+
+.description {
+
+    margin-top: 1.2rem;
+
+    /*
+       Typography
+    */
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    /*
+       Text properties
+    */
+    text-align: justify;
+
+    text-align-last: center;
+
+    text-indent: 20px;
+
+    line-height: 1.8;
+
+    word-spacing: 2px;
+
+    overflow-wrap: break-word;
+
+    color: #555;
+}
+
+
+/* =====================================
+   SKILLS
+   ===================================== */
+
+.skills {
+
+    margin-top: 1.5rem;
+
+    padding: 1rem;
+
+    background-color: rgba(37, 99, 235, 0.08);
+
+    border-radius: 12px;
+}
+
+
+/* Descendant Selector
+   Selector 6
+*/
+
+.skills h3 {
+
+    color: #1e40af;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 0.7rem;
+}
+
+
+/* Child Selector >
+   Selector 7
+*/
+
+.skills > ul {
+
+    list-style-type: none;
+
+}
+
+
+/* Child Selector >
+   Selects direct li elements
+*/
+
+.skills > ul > li {
+
+    display: inline-block;
+
+    padding: 0.4em 0.7em;
+
+    margin: 0.25rem;
+
+    /*
+       Color format: HEX
+    */
+    background-color: #dbeafe;
+
+    color: #1e3a8a;
+
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+
+/* =====================================
+   SOCIAL LINKS
+   ===================================== */
+
+.social {
+
+    margin-top: 1.5rem;
+}
+
+
+/* Grouping Selector
+   Selector 8
+*/
+
+.social h3,
+.social a {
+
+    font-size: 1rem;
+
+    font-weight: 600;
+}
+
+
+/* Attribute Selector
+   Selector 9
+*/
+
+a[href="#"] {
+
+    color: #2563eb;
+
+}
+
+
+/* Social link */
+
+.social-link {
+
+    display: inline-block;
+
+    margin: 0.3rem;
+
+    text-decoration: none;
+
+    padding: 0.4rem 0.7rem;
+
+    border-bottom: 2px solid #2563eb;
+}
+
+
+/* Adjacent Sibling Selector
+   Selector 10
+*/
+
+.social h3 + .social-link {
+
+    font-weight: bold;
+}
+
+
+/* General Sibling Selector
+   Selector 11
+*/
+
+.social h3 ~ a {
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Hover pseudo-class */
+
+.social-link:hover {
+
+    color: #ffffff;
+
+    background-color: #2563eb;
+
+}
+
+
+/* =====================================
+   CONTACT BUTTON
+   ===================================== */
+
+.contact-button {
+
+    margin-top: 1.5rem;
+
+    padding: 0.8em 2em;
+
+    /* Unit: em */
+
+    border: none;
+
+    border-radius: 25px;
+
+    /*
+       RGBA color
+    */
+    background-color: rgba(37, 99, 235, 0.95);
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    box-shadow: 0 5px 10px rgba(37, 99, 235, 0.3);
+}
+
+
+/* Button hover */
+
+.contact-button:hover {
+
+    background-color: #1e40af;
+
+    transform: scale(1.03);
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+@media (max-width: 600px) {
+
+    .profile-card {
+
+        width: 95%;
+
+        padding: 1.5rem;
+    }
+
+
+    .profile-image {
+
+        width: 140px;
+
+        height: 140px;
+    }
+
+
+    .name {
+
+        font-size: 1.6rem;
+
+        letter-spacing: 1px;
+    }
+
+}

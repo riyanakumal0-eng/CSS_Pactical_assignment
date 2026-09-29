@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My CSS Selectors Page</h1>
+        <p class="intro">
+            This webpage demonstrates different types of CSS selectors.
+        </p>
+
+        <button>Click Me</button>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Riyana. I am learning HTML and CSS.
+        </p>
+
+        <p class="highlight">
+            I enjoy learning web development and programming.
+        </p>
+
+        <!-- Descendant selector example -->
+        <div class="about-box">
+            <p>This paragraph is inside the about box.</p>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+
+        <!-- Child selector example -->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p>These are some skills I am learning.</p>
+    </section>
+
+
+    <!-- Sibling Selector Section -->
+    <section class="sibling-example">
+
+        <h2>Sibling Selectors</h2>
+
+        <p class="first-text">
+            hello! This is the first paragraph in this section.
+        </p>
+
+        <!-- Adjacent sibling selector targets this paragraph -->
+        <p>
+            This paragraph comes immediately after the first paragraph.
+        </p>
+
+        <!-- General sibling selector also targets this paragraph -->
+        <p>
+            This is another paragraph after the first paragraph.
+        </p>
+
+    </section>
+
+
+    <!-- Image Section -->
+    <section>
+        <h2>My Image</h2>
+
+        <img
+            src="images/image1.jpg"
+            alt="Profile placeholder image"
+        >
+    </section>
+
+
+    <!-- Links Section -->
+    <section>
+        <h2>Useful Links</h2>
+
+        <a href="https://www.google.com">
+            Visit Google
+        </a>
+
+        <br><br>
+
+        <a href="https://www.youtube.com">
+            Visit YouTube
+        </a>
+    </section>
+
+
+    <!-- Attribute Selector Section -->
+    <section>
+        <h2>Contact</h2>
+
+        <input type="text" placeholder="Enter your name"> <br><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+        <button type="submit">Submit</button>
+    </section>
+
+
+    <footer>
+        <p>© 2026 My CSS Practice Page</p>
+    </footer>
+
+</body>
+</html>
